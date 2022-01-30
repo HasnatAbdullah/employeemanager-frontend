@@ -2,6 +2,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
 
+## Prerequisite
+
+Install [node.js](https://nodejs.org/en/) 
+
+Install [angular](https://angular.io/guide/setup-local)
+
+## Steps
+
+Go to target directory
+
+Run this command `ng new employeemanager-frontend`
+
+### select these--->
+
+? Would you like to add Angular routing? `No`
+? Which stylesheet format would you like to use? `CSS`
+#### Run this
+
+`cd employeemanager-frontend`
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -25,3 +44,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# Profit ??
