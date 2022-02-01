@@ -3,6 +3,7 @@ import { Employee } from './employee';
 import { EmployeeService } from './employee.service';
 import { HttpErrorResponse } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
+import { title } from 'process';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  title = 'employeemanager-frontend';
   public employees!: Employee[];
   public editEmployee!: Employee;
   public deleteEmployee!: Employee;
