@@ -1,3 +1,4 @@
+<!-- Nav Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" style="color:white;">Employee Manager</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +17,10 @@
      </form>
   </div>
 </nav>
+
 <div class="container" id="main-container">
+
+   <!-- Iterative Cards? -->
 <div class="row">
   <div *ngFor="let employee of employees" class="col-md-6 col-xl-3">
      <div class="card m-b-30">
@@ -54,6 +58,7 @@
           </button>
        </div>
        <div class="modal-body">
+          <!-- Add Employee Form -->
           <form #addForm="ngForm" (ngSubmit)="onAddEmloyee(addForm)">
           <div class="form-group">
              <label for="name">Name</label>
@@ -96,6 +101,7 @@
            </button>
         </div>
         <div class="modal-body">
+           <!-- Edit Employee Form -->
            <form #editForm="ngForm">
               <div class="form-group">
                  <label for="name">Name</label>
@@ -143,7 +149,7 @@
            <p>Are you sure you want to delete employee {{deleteEmployee?.name}}?</p>
            <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-              <button (click)="onDeleteEmloyee(deleteEmployee.id)" class="btn btn-danger" data-dismiss="modal">Yes</button>
+              <button (click)="onDeleteEmloyee(deleteEmployee!.id)" class="btn btn-danger" data-dismiss="modal">Yes</button>
            </div>
         </div>
      </div>
